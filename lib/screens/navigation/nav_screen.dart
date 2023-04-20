@@ -26,8 +26,8 @@ class NavigationWidget extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 10),
           child: Image.asset(
             "assets/images/${data[i]['icon']}",
-            width: 48,
-            height: 48,
+            width: 40,
+            height: 40,
           ),
         )
       );
