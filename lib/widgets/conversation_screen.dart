@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../screens/navigation/nav_screen.dart';
+import '../screens/chat/chat.dart';
 
 class ConversationScreen extends StatefulWidget {
   const ConversationScreen({super.key});
@@ -9,7 +10,7 @@ class ConversationScreen extends StatefulWidget {
 
 class _ConversationScreen extends State<ConversationScreen> {
 
-  String _currentIndex = "chat";
+  final String _currentIndex = "chat";
 
   // final List<Widget> _pages = [
   //   CachedContentWidget(content: 'Page 1'), // 第一页的内容
@@ -29,16 +30,13 @@ class _ConversationScreen extends State<ConversationScreen> {
               decoration: BoxDecoration(
                 color: Colors.white.withOpacity(0.5),
               ),
-              child: NavigationWidget(),
+              child: const NavigationWidget(),
             ),
             Expanded(
               child: Container(
                 color: Colors.white,
                 child: const Center(
-                  child: Text(
-                    '右边的内容',
-                    style: TextStyle(fontSize: 20),
-                  ),
+                  child: Chat(),
                 ),
               ),
             ),

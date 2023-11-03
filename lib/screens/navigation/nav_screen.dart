@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 
 class NavigationWidget extends StatelessWidget {
+  const NavigationWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
